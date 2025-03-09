@@ -3,8 +3,6 @@
 import React from 'react';
 import type { Experience } from '@/services/api';
 
-// 이런 데이터는 CMS에서 관리해야 하는데...
-// 영업님이 "Headless CMS 계약금 아끼자"고 하셔서...
 const EXPERIENCE_DATA = [
   {
     period: '2024.03 - 2024.12',
@@ -43,7 +41,7 @@ interface ExperienceProps {
   data: Experience;
 }
 
-const Experience: React.FC<ExperienceProps> = ({ data }) => {
+const Experience: React.FC<ExperienceProps> = ({ }) => {
   return (
     <section id="experience" className="experience">
       <div className="container">

@@ -48,29 +48,7 @@ interface SkillsProps {
   data: SkillSet;
 }
 
-const SkillCard = ({ title, skills }: { title: string; skills: Array<string> }) => (
-  <div className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-    <h3 className="text-2xl font-bold text-gray-900 mb-8 pb-4 border-b border-gray-100 group-hover:text-blue-600 transition-colors">
-      {title}
-    </h3>
-    <ul className="space-y-6">
-      {skills.map((skill) => (
-        <li 
-          key={skill} 
-          className="transform transition-all duration-300 hover:-translate-x-2 group/item"
-        >
-          <div className="flex justify-between items-center">
-            <span className="text-lg text-gray-700 font-medium group-hover/item:text-gray-900">
-              {skill}
-            </span>
-          </div>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
-
-const Skills: React.FC<SkillsProps> = ({ data }) => {
+const Skills: React.FC<SkillsProps> = ({ }) => {
   // useState로 상태관리하고 싶었지만... 시니어의 여유가 필요한 시점
   return (
     <section id="skills" className="skills">
