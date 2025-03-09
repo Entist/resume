@@ -44,9 +44,6 @@ const Hero = () => {
           </div>
         </div>
         
-          
-        
-        
         {/* 추가: 주요 업무 섹션 */}
         <div className="hero-services">
           <h2 className="hero-services-title">주요 업무</h2>
@@ -56,7 +53,6 @@ const Hero = () => {
               <p>
                 기업에 맞는 AI 도입 컨설팅부터 개발, 구축까지 전략적 경험이 있으며,
                 현재 AI Agent를 활용한 개발 솔루션을 진행 중입니다.
-
               </p>
             </div>
             <div className="hero-service-item">
@@ -69,7 +65,7 @@ const Hero = () => {
             <div className="hero-service-item">
               <h3>프로세스 자동화</h3>
               <p>
-                Python, N8N, PowerShell 등 다양한 기술을 활용하여 반복 업무를 효율화하고
+                Python, N8N, Google Apps/Docs 등 다양한 기술을 활용하여 반복 업무를 효율화하고
                 비효율적인 프로세스를 개선하는데 다년간의 경험이 있습니다.
               </p>
             </div>
@@ -78,9 +74,7 @@ const Hero = () => {
           <div className="hero-services-cta">
             <a href="#contact" className="hero-cta-primary">문의하기</a>
           </div>
-
           </div>
-          
       </div>
     </section>
   );

@@ -75,9 +75,9 @@ export default function Home() {
         <main>
           <Hero />
           {skills && <Skills data={skills} />}
-          {experiences.length > 0 && <Experience data={experiences} />}
+          {experiences.length > 0 && <Experience data={experiences[0]} />}
           {projects.length > 0 && <Projects data={projects} />}
-          {contactInfo && <Contact data={contactInfo} />}
+          {contactInfo && <Contact />}
         </main>
         <Footer />
       </div>
